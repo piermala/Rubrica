@@ -21,7 +21,7 @@ public class Rubrica {
 	}
 	
 	
-	int bfdnkn;
+	String b;
 	public Voce addVoce(String nome, String cognome, String telefono) throws VoceEsistente {
 		Voce voce = null;
 		if (listaVoci.containsKey(nome+" "+cognome)){
