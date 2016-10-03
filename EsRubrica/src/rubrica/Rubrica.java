@@ -6,10 +6,10 @@ import java.util.TreeMap;
 public class Rubrica {
 	
 	// bbbbbbbbbbbbbbbbbbbbbbbbbbb
-
 	//hhhhhhhhhhhh
 	
 	private Map<String,Voce> listaVoci = new TreeMap<String,Voce>();
+//abcdefghilmnopq alfabeto
 //
 //	Commento 3
 	public Map<String,Voce> getListaVoci() {
