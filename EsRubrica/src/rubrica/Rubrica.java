@@ -4,6 +4,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Rubrica {
+	
+	// bbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 	private Map<String,Voce> listaVoci = new TreeMap<String,Voce>();
 //
