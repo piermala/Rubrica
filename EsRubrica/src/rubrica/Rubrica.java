@@ -11,7 +11,7 @@ public class Rubrica {
 	public Map<String,Voce> getListaVoci() {
 		return listaVoci;
 	}
-//Modifica definitiva
+//Modifica definitiva kdhbgaeifubaefhbcauhbfckauehfclia
 	public void setListaVoci(Map<String,Voce> listaVoci) {
 		this.listaVoci = listaVoci;
 	}
