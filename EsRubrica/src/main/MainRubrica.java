@@ -10,3 +10,4 @@ public class MainRubrica {
 		System.out.println(v1);
 	}
 }
+
