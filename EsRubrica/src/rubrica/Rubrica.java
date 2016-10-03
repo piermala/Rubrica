@@ -7,11 +7,11 @@ public class Rubrica {
 
 	private Map<String,Voce> listaVoci = new TreeMap<String,Voce>();
 //
-	
+//	Commento 3
 	public Map<String,Voce> getListaVoci() {
 		return listaVoci;
 	}
-
+//Modifica definitiva
 	public void setListaVoci(Map<String,Voce> listaVoci) {
 		this.listaVoci = listaVoci;
 	}
