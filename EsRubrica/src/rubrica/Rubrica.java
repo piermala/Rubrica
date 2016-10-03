@@ -7,7 +7,7 @@ public class Rubrica {
 
 	private Map<String,Voce> listaVoci = new TreeMap<String,Voce>();
 //
-//	
+//	Commento 3
 	public Map<String,Voce> getListaVoci() {
 		return listaVoci;
 	}
