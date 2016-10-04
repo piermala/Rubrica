@@ -61,15 +61,50 @@ public class Rubrica {
 		return lista;
 	}
 	
+<<<<<<< HEAD
 	//Metodo 4)
 //	public Voce aggiornaVoce(String nome, String cognome, String telefono){
+=======
+	
+	/// AGGIORNA VOCE
+	public Voce aggiornaVoce(String nome, String cognome, String telefono) throws VoceEsistente{
+>>>>>>> branch 'master' of https://github.com/piermala/Rubrica
 		Voce v = null;
+<<<<<<< HEAD
 	//	for (Voce v : listaVoci.get(nome+" "+cognome));
 	//}
+=======
+		for (Map.Entry<String, Voce> map : listaVoci.entrySet()){
+			if (map.getKey().equals(nome+" "+cognome)){
+				v = new Voce(nome, cognome, telefono);
+				listaVoci.put(nome+" "+cognome, v);
+			} else {
+				throw new VoceEsistente("L'utente non esiste!");
+			}
+		}		
+		return v;
+	}
+>>>>>>> branch 'master' of https://github.com/piermala/Rubrica
 	
+<<<<<<< HEAD
 //	//Metodo 5)
 //	public Voce cancellaVoce(String nome, String cognome){
 		
+=======
+	
+	/// CANCELLA VOCE
+	public Voce cancellaVoce(String nome, String cognome) throws VoceEsistente{
+		Voce v = null;
+		for (Map.Entry<String, Voce> map : listaVoci.entrySet()){
+			if (map.getKey().equals(nome+" "+cognome)){
+				v = new Voce(nome, cognome, listaVoci.get(nome+" "+cognome).getTelefono());
+				listaVoci.remove(nome+" "+cognome);
+			} else {
+				throw new VoceEsistente("L'utente non esiste!");
+			}
+		}		
+		return v;
+>>>>>>> branch 'master' of https://github.com/piermala/Rubrica
 	}
 	
 	
