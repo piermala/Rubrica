@@ -1,5 +1,6 @@
 package rubrica;
 
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -29,9 +30,14 @@ public class Rubrica {
 		return voce;
 	}
 	
+	
 	public Voce getVoce(String nome, String cognome){
 		return null;
 		
+	}
+	
+	public List<Voce> getTutteLeVoci(){
+		return null;
 	}
 	
 	
