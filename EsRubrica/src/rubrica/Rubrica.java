@@ -1,5 +1,6 @@
 package rubrica;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -17,7 +18,7 @@ public class Rubrica {
 		this.listaVoci = listaVoci;
 	}
 	
-	
+	//Metodo 1)
 	public Voce addVoce(String nome, String cognome, String telefono) throws VoceEsistente {
 		Voce voce = null;
 		if (listaVoci.containsKey(nome+" "+cognome)){
@@ -30,26 +31,46 @@ public class Rubrica {
 		return voce;
 	}
 	
-	
-	public Voce getVoce(String nome, String cognome){
-		return null;
+	//Metodo 2)
+	public Voce getVoce(String nome, String cognome) throws VoceEsistente{
+		
+		Voce v=null;
+		if(!listaVoci.containsKey(nome+" "+cognome)){
+			
+			throw new VoceEsistente("La voce non è presente in rubrica");	
+			
+		}else{
+			Voce v1 = new Voce();
+			v=v1;
+		}
+		
+		return v;
 		
 	}
-	
+	//Metodo 3)
 	public List<Voce> getTutteLeVoci(){
-		return null;
+		
+	List<Voce> lista = new ArrayList<Voce>(listaVoci.values());
+	
+	
+		
+//	for(Map.Entry <String , Voce>mappa : listaVoci.entrySet()){
+//		System.out.println(mappa);
+//	}
+		
+		return lista;
 	}
 	
-	
-	public Voce aggiornaVoce(String nome, String cognome, String telefono){
+	//Metodo 4)
+//	public Voce aggiornaVoce(String nome, String cognome, String telefono){
 		Voce v = null;
-		for (Voce v : listaVoci.get(nome+" "+cognome));
-	}
+	//	for (Voce v : listaVoci.get(nome+" "+cognome));
+	//}
 	
-	
-	public Voce cancellaVoce(String nome, String cognome){
+//	//Metodo 5)
+//	public Voce cancellaVoce(String nome, String cognome){
 		
 	}
 	
 	
-}
+//}
