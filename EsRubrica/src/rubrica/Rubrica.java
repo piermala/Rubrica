@@ -4,24 +4,19 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Rubrica {
-	
-	// bbbbbbbbbbbbbbbbbbbbbbbbbbb
-	//hhhhhhhhhhhh
-	
+
 	private Map<String,Voce> listaVoci = new TreeMap<String,Voce>();
-//abcdefghilmnopq alfabeto
-//
-//	Commento 3
+
+
 	public Map<String,Voce> getListaVoci() {
 		return listaVoci;
 	}
-//Modifica definitiva kdhbgaeifubaefhbcauhbfckauehfclia
+
 	public void setListaVoci(Map<String,Voce> listaVoci) {
 		this.listaVoci = listaVoci;
 	}
 	
 	
-	String b;
 	public Voce addVoce(String nome, String cognome, String telefono) throws VoceEsistente {
 		Voce voce = null;
 		if (listaVoci.containsKey(nome+" "+cognome)){
@@ -33,4 +28,11 @@ public class Rubrica {
 		
 		return voce;
 	}
+	
+	public Voce getVoce(String nome, String cognome){
+		return null;
+		
+	}
+	
+	
 }
