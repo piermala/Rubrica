@@ -41,4 +41,15 @@ public class Rubrica {
 	}
 	
 	
+	public Voce aggiornaVoce(String nome, String cognome, String telefono){
+		Voce v = null;
+		for (Voce v : listaVoci.get(nome+" "+cognome));
+	}
+	
+	
+	public Voce cancellaVoce(String nome, String cognome){
+		
+	}
+	
+	
 }
